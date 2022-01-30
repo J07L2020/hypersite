@@ -1,0 +1,274 @@
+:root{
+    /* Tamaños de font principal */
+    --tamaño-font-nav-a: 2.5rem;
+    --tamaño-font-nav-spam: 2.6rem;
+    --tamaño-font-nav-img: 5.6rem;
+    --tamaño-font-nav-title: 2rem;
+
+    /* Tamaños de font hasta los 1500px */
+    ---tamaño-font-nav-a: 2.1rem;
+    ---tamaño-font-nav-spam: 2.4rem;
+    ---tamaño-font-nav-img: 5.4rem;
+    ---tamaño-font-nav-title: 1.5rem;
+
+    /* Tamaños de font hasta los 1500px */
+    ----tamaño-font-nav-a: 1.9rem;
+    ----tamaño-font-nav-spam: 2.2rem;
+    ----tamaño-font-nav-img: 5.2rem;
+    ----tamaño-font-nav-title: 1rem;
+
+    /* Tamaños de font hasta los 1500px */
+    -----tamaño-font-nav-a: 1.7rem;
+    -----tamaño-font-nav-spam: 2rem;
+    -----tamaño-font-nav-img: 5rem;
+    -----tamaño-font-nav-title: 0.5rem;
+}
+
+html{
+    font-size:62.5%;
+    box-sizing: border-box; 
+    scroll-snap-type: y mandatory;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+/* CÓDIGO DE ENCABEZADO */
+header{
+    display:flex;
+}
+/* Estilos del logo */
+.logo{
+    width: 60%;
+    height: 10%;
+    background: rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+}
+/* Contenido del logo */
+header .logo a{
+    text-decoration: none;
+    font-size: var(--tamaño-font-nav-a);
+}
+header .logo a:hover{
+    font-weight: 800;
+    color: rgb(29, 30, 99);
+    background: rgba(0,0,0,0.01);
+}
+header .logo a span{
+    font-size: var(--tamaño-font-nav-spam);
+}
+header .logo img{
+    width: var(--tamaño-font-nav-img);
+}
+header .logo .title{
+    margin-left: var(---tamaño-font-nav-title);
+}
+
+/* Estilos del nav */
+.navbar{
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15rem;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: var(--tamaño-font-nav-a);
+}
+.navbar a:hover{
+    font-weight: 800;
+    color: rgb(29, 30, 99);
+    background: rgba(0,0,0,0.01);
+}
+
+/* CÓDIGO DEL CUERPO */
+
+/* Estilos de portada */
+.portada{
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    background: url(../images/portada.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.portada .bievenido{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portada .bievenido h1{
+    font-size: 500%;
+    color: white;
+    font-weight: 200;
+}
+.portada .bievenido hr{
+    width: 750px;
+    height: 2px;
+    background: white;
+    border: none;
+}
+.portada .bievenido p{
+    font-size: 250%;
+    color: white;
+}
+.portada .bievenido > button{
+    width: 25rem;
+    height: 4rem;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 24px;
+    outline: none;
+    font-size: 22px;
+    color: rgba(0,0,0);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.portada .bievenido > button:hover{
+    color: white;
+    background: rgba(0,0,0,0.7);
+}
+
+@media (max-width: 1500px) {
+    /* Contenido del logo */
+    header .logo a{
+        font-size: var(---tamaño-font-nav-a);
+    }
+    header .logo a span{
+        font-size:var(---tamaño-font-nav-spam);
+    }
+    header .logo img{
+        width: var(---tamaño-font-nav-img);
+    }
+    header .logo .title{
+        margin-left: var(---tamaño-font-nav-title);
+    }
+
+    /* Estilos del nav */
+    .navbar{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10rem;
+    }
+    .navbar a{
+        text-decoration: none;
+        font-size: var(---tamaño-font-nav-a);
+    }
+    /* Dentro de la portada */
+    .portada .bievenido h1{
+        font-size: 450%;
+    }
+    .portada .bievenido hr{
+        width: 70rem;
+    }
+    .portada .bievenido p{
+        font-size: 250%;
+        color: white;
+    }
+    .portada .bievenido > button{
+        width: 30rem;
+        height: 4rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1090px) {
+    /* Contenido del logo */
+    header .logo a{
+        font-size: var(----tamaño-font-nav-a);
+    }
+    header .logo a span{
+        font-size:var(----tamaño-font-nav-spam);
+    }
+    header .logo img{
+        width: var(----tamaño-font-nav-img);
+    }
+    header .logo .title{
+        margin-left: var(----tamaño-font-nav-title);
+    }
+
+    /* Estilos del nav */
+    .navbar{
+        padding: 0 7rem;
+    }
+    .navbar a{
+        text-decoration: none;
+        font-size: var(----tamaño-font-nav-a);
+    }
+
+    /* Dentro de la portada */
+    .portada .bievenido h1{
+        font-size: 400%;
+    }
+    .portada .bievenido hr{
+        width: 65rem;
+    }
+    .portada .bievenido p{
+        font-size: 250%;
+        color: white;
+    }
+    .portada .bievenido > button{
+        width: 35rem;
+        height: 4rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    /* Contenido del logo */
+    header .logo a{
+        font-size: var(-----tamaño-font-nav-a);
+    }
+    header .logo a span{
+        font-size: var(-----tamaño-font-nav-spam);
+    }
+    header .logo img{
+        width: var(-----tamaño-font-nav-img);
+    }
+    header .logo .title{
+        margin-left: var(-----tamaño-font-nav-title);
+    }
+    /* Estilos del nav */
+    .navbar{
+        padding: 0 3rem;
+    }
+    .navbar a{
+        text-decoration: none;
+        font-size: var(-----tamaño-font-nav-a);
+    }
+    /* Dentro de la portada */
+    .portada .bievenido h1{
+        font-size: 300%;
+        color: white;
+        font-weight: 200;
+    }
+    .portada .bievenido hr{
+        width: 46rem;
+    }
+    .portada .bievenido p{
+        font-size: 200%;
+        color: white;
+    }
+    .portada .bievenido > button{
+        width: 45rem;
+        height: 4rem;
+        font-size: 2rem;
+    }
+}
