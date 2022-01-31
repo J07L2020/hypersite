@@ -12,22 +12,35 @@
     <meta name="description" content="Bienvenidos a mi página informativa personal">
     <!-- Ícono principal -->
     <link rel="icon" href="./images/icon.png">
-    <!-- Link de estilo de inicio -->
-    <link rel="stylesheet" href="./css/inicio.css">
+    <!-- Link de estilo de header -->
+    <link rel="stylesheet" href="./css/header.css">
+    <!-- Link de estilos de portada -->
+    <link rel="stylesheet" href="./css/portada.css">
+    <!-- Link de estilos de perfil -->
+    <link rel="stylesheet" href="./css/seccion_perfil.css">
+    <!-- carpeta de iconos -->
+    <link href="./fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+    <!-- <script defer src="/your-path-to-fontawesome/js/all.js"></script>
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <script defer src="/your-path-to-fontawesome/js/brands.js"></script>
+    <script defer src="/your-path-to-fontawesome/js/solid.js"></script>
+    <script defer src="/your-path-to-fontawesome/js/fontawesome.js"></script> -->
     <title>MiPortafolio</title>
 </head>
 <body>
     <!-- CABECERA -->
     <header>
         <div class="logo">
-            <a href="index.html"> <img src="./images/icon.png" alt="ícono principal"> </a>
-            <a class="title" href="index.html">My Portafolio Personal <span>WolfJALOP</span> </a>
+            <a href="index.html" rel="nofollow" rel="noopener" rel="noreference"> <img src="./images/icon.png" alt="ícono principal"> </a>
+            <a class="title" href="index.html" rel="nofollow" rel="noopener" rel="noreference">My Portafolio Personal <span>WolfJALOP</span> </a>
         </div>
         <nav class="navbar">
-            <a href="/">Inicio</a>
-            <a href="/">Sobre Mi</a>
-            <a href="/">Clientes</a>
-            <a href="/">Contactos</a>
+            <a href="/" rel="nofollow" rel="noopener" rel="noreference">Inicio</a>
+            <a href="#sobre_mi" rel="nofollow" rel="noopener" rel="noreference">Sobre Mi</a>
+            <a href="/" rel="nofollow" rel="noopener" rel="noreference">Clientes</a>
+            <a href="/" rel="nofollow" rel="noopener" rel="noreference">Contactos</a>
         </nav>
     </header>
 
@@ -35,24 +48,53 @@
     <main class="main">
         <section class="portada">
             <div class="bievenido">
-                <h1>Bienvenido a mi Portafolio Personal</h1>
+                <h2>Bienvenido a mi Portafolio Personal</h2>
                 <hr>
                 <p>Acerca de mi</p>
                 <button>Yo mismo</button>
             </div>
         </section>
+        <hr id="sobre_mi">
+        <h1>Sobre Mi</h1>
+        <hr>
         <!-- CONTENIDO -->
-        <section class="main_section1">
+        <section id="main_section1" class="main_section1">
             <div class="main_section--perfil">
-                PERFIL
+                <div class="perfil--card">
+                    <img src="./images/perfil_book.jpg" alt="">
+                    <div class="foto_perfil">
+                        <img src="./images/icon.png" alt="">
+                    </div>
+                    <div class="perfil--descripcion">
+                        <h2>Jesús Edilberto Alvino López</h2>
+                        <p>Científico de Datos</p>
+                        <div class="perfil--descripcion__info">
+                            <div class="info--ubicacion">
+                                <h3>Ubicación: <a href="https://www.google.com.pe/maps/@-9.9392433,-76.2375626,3a,75y,30.84h,85.02t/data=!3m6!1e1!3m4!1sd5A9b_jC7q_nGshsyf_S2g!2e0!7i13312!8i6656?hl=es" rel="nofollow" rel="noopener" rel="noreference" target="_blank" ><i class="fas fa-map-marker-alt"></i></a>Perú</h3>
+                                <!-- insertar mapa de ubicación -->
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d584.1885849876721!2d-76.23798864615243!3d-9.939238881527073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1643583831476!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                            <div class="info--redes">
+                                <h3>Redes Sociales</h3>
+                                <p><a href=""><i class="fas fa-envelope"></i></a>Correo</p>
+                                <p><a href=""><i class="fab fa-facebook-square"></i></a>Facebook</p>
+                                <p><a href=""><i class="fab fa-instagram"></i></a>Instagram</p>
+                                <p><a href=""><i class="fab fa-facebook-messenger"></i></a>Messenger</p>
+                                <p><a href=""><i class="fab fa-twitter"></i></a>Twitter</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="main_section--imagenes">
-                <ul>
-                    <li><img src="images/img1.jpg" alt=""></li>
-                    <li><img src="images/img2.jpg" alt=""></li>
-                    <li><img src="images/img3.jpg" alt=""></li>
-                    <li><img src="images/img4.jpg" alt=""></li>
-                </ul>
+                <div>
+                    <ul>
+                        <li><img src="images/img1.jpg" alt=""></li>
+                        <li><img src="images/img2.jpg" alt=""></li>
+                        <li><img src="images/img3.jpg" alt=""></li>
+                        <li><img src="images/img4.jpg" alt=""></li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section>
