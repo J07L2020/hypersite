@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descripción del tipo de página que es esta -->
+    <meta name="description" content="Esta página es un portafolio mío">
+    <!-- Busque y posicione nuestra página en internet, osea pueda ser visible con mejor posicionamiento del index -->
+    <meta name="robots" content="index,follow">
     <!-- Link del font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,15 +22,11 @@
     <link rel="stylesheet" href="./css/portada.css">
     <!-- Link de estilos de perfil -->
     <link rel="stylesheet" href="./css/seccion_perfil.css">
+    <!-- Link de estilos del formulario de contacto -->
+    <link rel="stylesheet" href="./css/contacto.css">
     <!-- carpeta de iconos -->
     <link href="./fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
-    <!-- <script defer src="/your-path-to-fontawesome/js/all.js"></script>
-    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
-    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
-    <script defer src="/your-path-to-fontawesome/js/brands.js"></script>
-    <script defer src="/your-path-to-fontawesome/js/solid.js"></script>
-    <script defer src="/your-path-to-fontawesome/js/fontawesome.js"></script> -->
+
     <title>MiPortafolio</title>
 </head>
 <body>
@@ -39,8 +39,8 @@
         <nav class="navbar">
             <a href="/" rel="nofollow" rel="noopener" rel="noreference">Inicio</a>
             <a href="#sobre_mi" rel="nofollow" rel="noopener" rel="noreference">Sobre Mi</a>
-            <a href="/" rel="nofollow" rel="noopener" rel="noreference">Clientes</a>
-            <a href="/" rel="nofollow" rel="noopener" rel="noreference">Contactos</a>
+            <a href="#proyectos" rel="nofollow" rel="noopener" rel="noreference">Proyectos</a>
+            <a href="#contacto" rel="nofollow" rel="noopener" rel="noreference">Contacto</a>
         </nav>
     </header>
 
@@ -87,18 +87,49 @@
                 </div>
             </div>
             <div class="main_section--imagenes">
+                <h2>Mis Viajes</h2>
                 <div>
                     <ul>
-                        <li><img src="images/img1.jpg" alt=""></li>
-                        <li><img src="images/img2.jpg" alt=""></li>
-                        <li><img src="images/img3.jpg" alt=""></li>
-                        <li><img src="images/img4.jpg" alt=""></li>
+                        <li><a href=""><img src="images/img1.jpg" alt=""></a></li>
+                        <li><a href=""><img src="images/img2.jpg" alt=""></a></li>
+                        <li><a href=""><img src="images/img3.jpg" alt=""></a></li>
+                        <li><a href=""><img src="images/img4.jpg" alt=""></a></li>
                     </ul>
                 </div>
             </div>
         </section>
+        <hr id="proyectos">
+        <h1>Mis proyectos</h1>
+        <hr>
         <section>
 
+        </section>
+        <hr id="contacto">
+        <h1>Contáctame directamente</h1>
+        <hr>
+        <section id="main_section3" class="main_section3">
+            <div class="main_section--contacto">
+                <form action="" class="form">
+                    <h2>Información de contacto</h2>
+                    <div class="form_container">
+                        <label for="persona">
+                            <span>Apellidos y nombres</span>
+                            <input type="text" id="persona" placeholder="Digite sus apellidos y nombres" autocomplete="name" required>
+                        </label>
+                        <label for="correo">
+                            <span>Correo Electrónico</span>
+                            <input type="email" id="correo" placeholder="Digite su correo de contacto" autocomplete="email" required>
+                        </label>
+                        <label for="asunto">
+                            <span>Asunto</span>
+                            <textarea name="asunto" id="asunto" cols="30" rows="10" placeholder="Déjame un mensaje" required></textarea>
+                        </label>
+                        <label for="boton">
+                            <button id="boton" type="submit">Enviar Información</button>
+                        </label>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 

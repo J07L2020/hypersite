@@ -89,15 +89,34 @@
 .main .main_section1 .main_section--imagenes{
     background: var(--griss-mas-claro);
     width: 100%;
-    padding-top: 5.5%;
+    padding-top: 1%;
     overflow: hidden; /*desaparezcan las imagenes*/
     padding-right: 3rem;
     background: rgba(255, 255, 255, 0.3);
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.4);
+    overflow: hidden;
+}
+
+.main .main_section1 .main_section--imagenes h2{
+    width: 100%;
+    font-size: 4rem;
+    text-align:center;
+    color:white;
+    margin-left: 1.5%;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.4);
+    overflow: hidden;
 }
 
 .main .main_section1 .main_section--imagenes div{
     width: 100%;
     height: 100%;
+    padding-top: 1%;
 }
 
 .main .main_section1 .main_section--imagenes ul{
