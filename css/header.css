@@ -27,7 +27,9 @@
     --griss-claro: rgba(0,0,0,0.1);
     --griss-mas-claro: rgba(0,0,0,0.01);
 }
-
+/* *{
+    box-sizing: ;
+} */
 
 html{
     font-size:62.5%;
