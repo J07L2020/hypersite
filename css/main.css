@@ -1,0 +1,57 @@
+:root{
+    /* Tamaños de font principal */
+    --font-Size-p: 16rem;
+
+    /* Tamaños de font hasta los 1500px */
+
+
+    /* Tamaños de font hasta los 1500px */
+
+
+    /* Tamaños de font hasta los 1500px */
+
+
+    /* Colores */
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size:62.5%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+h1{
+    font-size: 3rem;
+    color: var(--colorh1);
+    text-align: center;
+}
+
+p{
+    font-size: var(--font);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+button{
+    border-radius: 2rem;
+    font-size: 2rem;
+    width: 20rem;
+    height: 5rem;
+    box-shadow:
+       inset 0 -5em 1em rgba(0,0,0,0.1),
+             0.1em 0.1em 0.1em rgba(255, 255, 255, 0.4);
+    overflow: hidden;
+}
+cite{
+    font-size: 5rem;
+}
