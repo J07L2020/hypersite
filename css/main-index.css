@@ -1,0 +1,80 @@
+/* ESTILOS DEL MAIN O CUERPO*/
+/* Primera sección */
+.section1{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+}
+.section1__info{
+    width: 50%;
+    padding: 15rem;
+}
+.section1__info div{
+    margin: 5rem 0;
+}
+.section1__info div p{
+    margin-top: 2rem;
+}
+.section1__info button:hover{
+    background-color: var(--color-nav);
+    color: white;
+}
+.section1__portada{
+    width: 50%;
+    text-align: center;
+}
+
+/* Segunda sección */
+/* Sección 2 parte del perfil */
+.section2{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.section2__card--perfil{
+    width: 50%;
+    padding: 5rem 0;
+}
+.section2__card--perfil .content__card{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.section2__card--perfil .content__card a{
+    display: block;
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    padding-top: 1rem;
+    border-radius: 1rem;
+    background-color: var(--color-nav);
+}
+.section2__card--perfil img{
+    width: 100%;
+    height: 30rem;
+}
+.content__perfil{
+    position: absolute;
+    width: 25%;
+    text-align: center;
+    margin-top: -5rem;
+}
+.content__perfil img{
+    width: 70%;
+}
+.info--ubicacion iframe{
+    width: 100%;
+}
+
+/* Seccion 2 parte de la info */
+.section2__card--info{
+    width: 50%;
+    padding: 5rem;
+}

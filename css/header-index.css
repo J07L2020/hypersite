@@ -1,9 +1,11 @@
+/* ESTILOS DEL CONTENIDO DEL HEADER O ENCABEZADO */
 .header{
     display: flex;
     justify-content: center;
     font-size: 16px;
     background-color: black;
 }
+/* Sección del logo */
 .header__logo{
     width: 30%;
     padding-top: 2rem;
@@ -14,6 +16,7 @@
     background-color: white;
     border-radius: 50%;
 }
+/* Sección del nav o navegación */
 .header__nav{
     width: 70%;
 }
@@ -29,36 +32,15 @@
 .nav__link a{
     color: white;
 }
+.nav__link a:hover{
+    color: var(--color-nav);
+}
 .nav__link img{
     width: 3.5rem;
     border: solid 0.1px;
     border-radius: 50%;
 }
 
-/* ESTILOS DEL MAIN */
-
-.main{
-    display: flex;
-    background-color: black;
-    color: white;
-    align-items: center;
-    font-size: 18px;
-}
-.main__info{
-    width: 50%;
-    padding: 15rem;
-}
-.main__info div{
-    margin: 5rem 0;
-}
-.main__info div p{
-    margin-top: 2rem;
-}
-.main__portada{
-    width: 50%;
-    text-align: center;
-    padding: 5rem;
-}
 
 /* KEY FRAMES */
 

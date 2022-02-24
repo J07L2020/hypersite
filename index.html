@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="./css/main.css">
     <!-- Link de estilo de header -->
     <link rel="stylesheet" href="./css/header-index.css">
-    <!-- Link de estilos de portada -->
+    <!-- Link de estilos de cuerpo-->
+    <link rel="stylesheet" href="./css/main-index.css">
 
     <title>MiPortafolio</title>
 </head>
@@ -44,17 +45,73 @@
         </nav>
     </header>
     <main class="main">
-        <div class="main__info">
-            <p>Mi nombre es JESÚS EDILBERTO ALVINO LÓPEZ, soy Ingeniero de Sistemas</p>
-            <div>
-                <cite>AMO LA TECNOLOGÍA Y LA CREATIVIDAD</cite>
-                <p>Me dedico al DESARROLLO DE SOFTWARE y soy FULL STACK</p>
+        <section class="section1">
+            <div class="section1__info">
+                <p>Mi nombre es JESÚS EDILBERTO ALVINO LÓPEZ, soy Ingeniero de Sistemas</p>
+                <div>
+                    <cite>AMO LA TECNOLOGÍA Y LA CREATIVIDAD</cite>
+                    <p>Me dedico al DESARROLLO DE SOFTWARE y soy FULL STACK</p>
+                </div>
+                <button>Contáctame</button>
             </div>
-            <button>Contáctame</button>
-        </div>
-        <div class="main__portada">
-            <img src="./images/portada.jpg" alt="Portada">
-        </div>
+            <div class="section1__portada">
+                <img src="./images/portada.jpg" alt="Portada">
+            </div>
+        </section>
+        <h1 id="sobre_mi">SOBRE MÍ</h1>
+        <hr>
+        <section class="section2">
+            <div class="section2__card--perfil">
+                <div class="content__card">
+                    <img src="./images/perfil_book.jpg" alt="">
+                    <div class="content__perfil">
+                        <img src="./images/perfil.svg" alt="">
+                    </div>
+                    <div class="info--ubicacion">
+                        <!-- insertar mapa de ubicación -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d584.1885849876721!2d-76.23798864615243!3d-9.939238881527073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1643583831476!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <a href="https://www.google.com.pe/maps/@-9.9392433,-76.2375626,3a,75y,30.84h,85.02t/data=!3m6!1e1!3m4!1sd5A9b_jC7q_nGshsyf_S2g!2e0!7i13312!8i6656?hl=es" rel="nofollow" rel="noopener" rel="noreference" target="_blank" > <span>Ubicación:</span>  <i class="fas fa-map-marker-alt"></i> Perú</a>
+                </div>
+            </div>
+            <div class="section2__card--info">
+                <h2>Hola!, mi nombre es JESÚS EDILBERTO ALVINO LÓPEZ</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum eum, commodi quos temporibus soluta ea error aut deleniti quas sapiente quasi? Fugiat neque laboriosam at quibusdam quo suscipit molestias repellendus.</p>
+                <div>
+                    <p>
+                        <strong> Nombres: </strong>Jesús Edilberto <br>
+
+                        <strong> Apellidos: </strong>Alvino López <br>
+
+                        <strong> Apodo: </strong>Jishu, Camote, Yisus <br>
+
+                        <strong> Fecha de Nacimiento: </strong>07/07/2000 <br>
+
+                        <strong> Celular: </strong>935289770 <br>
+
+                        <strong> Profesión Universitaria: </strong>Ingeniero de Sistemas <br>
+
+                        <strong> Profesión Técnica: </strong>Ingeniero de Software con inteligencia artificial <br>
+
+                        <strong> Habilidades: </strong>Solucionador de ejercicios matemáticos, sociable, abierto a las oportunidades laborales de todo tipo, destreza deportiva, etc. <br>
+
+                        <strong> Ocupación actual: </strong>Estudiante <br>
+
+                        <strong> Otras actividades: </strong>Participación en concursos de danzas, trabajos eventuales, participación en competiciones de futbol y fulbito, estudios en plataformas digitales, etc.
+                    </p>
+                </div>
+                <div class="perfil--descripcion__info">
+                    <div class="info--redes">
+                        <h3>Redes Sociales</h3>
+                        <p><a href=""><i class="fas fa-envelope"></i></a>Correo</p>
+                        <p><a href=""><i class="fab fa-facebook-square"></i></a>Facebook</p>
+                        <p><a href=""><i class="fab fa-instagram"></i></a>Instagram</p>
+                        <p><a href=""><i class="fab fa-facebook-messenger"></i></a>Messenger</p>
+                        <p><a href=""><i class="fab fa-twitter"></i></a>Twitter</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
