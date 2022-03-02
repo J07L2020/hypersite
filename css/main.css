@@ -1,6 +1,6 @@
 :root{
     /* Tamaños de font principal */
-    --font-Size-p: 16rem;
+    --font-Size-p: 2rem;
 
     /* Tamaños de font hasta los 1500px */
 
@@ -27,7 +27,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
 }
-h1{
+h1,h2, h3{
     font-size: 3rem;
     color: var(--colorh1);
     text-align: center;
@@ -40,7 +40,7 @@ hr{
 }
 
 p{
-    font-size: var(--font);
+    font-size: var(--font-Size-p);
 }
 a{
     text-decoration: none;

@@ -77,4 +77,27 @@
 .section2__card--info{
     width: 50%;
     padding: 5rem;
+    padding-right: 20rem;
+}
+
+.section2__card--info > p{
+    margin: 3rem 0;
+    text-align: justify;
+}
+
+.section2__card--info .descripcion__info p{
+    margin-top: 1.5rem;
+}
+.section2__card--info .descripcion__info strong{
+    color: var(--color-nav);
+    font-weight: 800;
+}
+.section2__card--info .info--redes div{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.section2__card--info .info--redes div a:hover{
+    color: black;
 }
