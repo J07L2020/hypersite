@@ -18,40 +18,48 @@
     <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
     <!-- Ícono principal -->
     <link rel="icon" href="./images/icon.svg">
+    <!-- Estilo del css principal -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Enlace del estilo movile.css -->
+    <link rel="stylesheet" href="./css/movile.css">
 
+    <!-- Scripts -->
+    <script defer src="./js/index.js"></script>
     <title>MiPortafolio</title>
 </head>
 <body>
     <!-- CABECERA -->
     <header class="header">
-        <div class="header__logo">
-            <a href="index.html" rel="nofollow" rel="noopener" rel="noreference"> <img src="./images/icon.svg" alt="ícono principal"> </a>
-        </div>
+        <a href="index.html" rel="nofollow" rel="noopener" rel="noreference"> <img src="./images/logomovile.svg" alt="ícono principal"> </a>
         <nav class="header__nav">
-            <ul>
-                <li class="nav__link"><a href="index.html" rel="nofollow" rel="noopener" rel="noreference">Inicio</a></li>
-                <li class="nav__link"><a href="#sobre_mi" rel="nofollow" rel="noopener" rel="noreference">Acerca de mi</a></li>
-                <li class="nav__link"><a href="#estudios" rel="nofollow" rel="noopener" rel="noreference">Mi portafolio</a></li>
-                <li class="nav__link"><a href="#proyectos" rel="nofollow" rel="noopener" rel="noreference">Mi Blog</a></li>
-                <li class="nav__link"><a href="#contacto" rel="nofollow" rel="noopener" rel="noreference">Contáctame</a></li>
-                <li class="nav__link"><a href="#contacto" rel="nofollow" rel="noopener" rel="noreference"><img src="./images/login.png" alt="iniciar sesión"></a></li>
+            <a class="nav__button"><img src="./images/menumovile.png" alt=""></a>
+            <ul class="nav__menu">
+                <li class="nav__link"><a class="nav_a" href="index.html" rel="nofollow" rel="noopener" rel="noreference">Inicio</a></li>
+                <li class="nav__link"><a class="nav_a" href="#sobre_mi" rel="nofollow" rel="noopener" rel="noreference">Acerca de mi</a></li>
+                <li class="nav__link"><a class="nav_a" href="#estudios" rel="nofollow" rel="noopener" rel="noreference">Mi portafolio</a></li>
+                <li class="nav__link"><a class="nav_a" href="#proyectos" rel="nofollow" rel="noopener" rel="noreference">Mi Blog</a></li>
+                <li class="nav__link"><a class="nav_a" href="#contacto" rel="nofollow" rel="noopener" rel="noreference">Contáctame</a></li>
             </ul>
         </nav>
     </header>
-    <main class="main">
+    <main>
         <section class="section1">
-            <div class="section1__info">
+            <div class="container__img">
+                <img src="./images/perfilmovile.png" alt="">
+                <div></div>
+            </div>
+            <div class="container__text">
                 <p>Mi nombre es JESÚS EDILBERTO ALVINO LÓPEZ, soy Ingeniero de Sistemas</p>
-                <div>
-                    <cite>AMO LA TECNOLOGÍA Y LA CREATIVIDAD</cite>
-                    <p>Me dedico al DESARROLLO DE SOFTWARE y soy FULL STACK</p>
-                </div>
-                <button>Contáctame</button>
+                <h1>AMO LA TECNOLOGÍA Y LA CREATIVIDAD</h1>
+                <p>Me dedico al DESARROLLO DE SOFTWARE y soy FULL STACK</p>
             </div>
-            <div class="section1__portada">
-                <img src="./images/portada.jpg" alt="Portada">
-            </div>
+            <button>CONTÁCTAME</button>
+            <a class="topmovile" href="#"><img src="./images/topmovile.png" alt=""></a>
         </section>
+        <section></section>
+        <section></section>
+        <section></section>
     </main>
+    <footer></footer>
 </body>
 </html>
